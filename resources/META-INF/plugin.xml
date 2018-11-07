@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>nl.rubensten.kotlinicon</id>
+    <name>Kotlin Icon</name>
+    <version>1.1</version>
+    <idea-version since-build="141.0"/>
+    <vendor url="http://ruben-sten.github.io">Ruben-Sten</vendor>
+
+    <description><![CDATA[
+      Adds a nice icon to global kotlin files. Because now it's ugly.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Please check out our other plugin, TeXiFy-IDEA!
+    ]]>
+    </change-notes>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <projectViewNodeDecorator implementation="nl.rubensten.kotlinicon.KotlinIconDecorator"/>
+        <fileIconProvider implementation="nl.rubensten.kotlinicon.KotlinIconDecorator"/>
+        <iconProvider implementation="nl.rubensten.kotlinicon.KotlinIconDecorator"/>
+    </extensions>
+
+    <actions>
+    </actions>
+</idea-plugin>
